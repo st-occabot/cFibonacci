@@ -4,7 +4,7 @@
 // Made this for the lulz. - occabot
 
 int main(int argc, char *argv[]) {
-	int sequenceSize;
+	int sequenceSize, currentValue;
         int firstValue = 1;
 	int secondValue = 1;
 	
@@ -21,8 +21,11 @@ int main(int argc, char *argv[]) {
 		} else if (count == 1) {
 			printf("1 ");
 		} else {	
-			int currentValue = firstValue + secondValue;
+			currentValue = firstValue + secondValue;
 			printf("%d ", currentValue);
+			//secondValue = currentValue - firstValue;
+			firstValue = secondValue;
+			secondValue = currentValue;
 		}
 	}
 
