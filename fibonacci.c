@@ -16,11 +16,13 @@ int main(int argc, char *argv[]) {
 	//Print out values until the size inputted has been reached
 	for (int count = 0; count < sequenceSize; count++) {
 		//Print out 1 for the first 2 values of the sequence
-		if (count == 1) {
+		if (count == 0) {
 			printf("1 "); 
-		} else if (count == 2) {
+		} else if (count == 1) {
 			printf("1 ");
 		} else {	
+			int currentValue = firstValue + secondValue;
+			printf("%d ", currentValue);
 		}
 	}
 
